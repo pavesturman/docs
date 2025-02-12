@@ -1,0 +1,56 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Advato",
+  "colors": {
+    "primary": "#004225",
+    "light": "#ECFDF5",
+    "dark": "#1F7857"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["overview", "getting-started"]
+          },
+          {
+            "group": "Core Features",
+            "pages": ["features", "dashboard", "auto-prompting", "deep-linking"]
+          },
+          {
+            "group": "Support",
+            "pages": ["faq", "troubleshooting", "billing"]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Email support",
+        "href": "mailto:support@useadvato.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://app.useadvato.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/advatoHQ",
+      "github": "https://github.com/advato",
+      "linkedin": "https://linkedin.com/company/advato"
+    }
+  }
+}

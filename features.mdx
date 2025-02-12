@@ -1,0 +1,39 @@
+---
+title: "Features"
+description: "Detailed guide on features."
+---
+
+# Advato Features
+
+## 1. Share Button
+
+Add a customizable referral share button to your app:
+
+### SwiftUI Implementation
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        ReferralButtonView()
+            .aspectRatio(6.5, contentMode: .fit)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .padding(20)
+    }
+}
+```
+
+### UIKit Implementation
+
+```swift
+let referralButton = ReferralButton()
+referralButton.layer.cornerRadius = 16
+view.addSubview(referralButton)
+```
+
+## 2. Auto-Prompting
+
+[Learn more about Auto-Prompting](./features/auto-prompting.md)
+
+## 3. Deep Link Handling
+
+[Learn more about Deep Link Handling](./features/deep-linking.md)
