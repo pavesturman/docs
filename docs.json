@@ -19,7 +19,7 @@
           },
           {
             "group": "Core Features",
-            "pages": ["features", "dashboard", "auto-prompting", "deep-linking"]
+            "pages": ["features", "auto-prompting", "deep-linking", "dashboard"]
           },
           {
             "group": "Support",

@@ -18,14 +18,14 @@ Using Swift Package Manager:
 ```swift
 // In Xcode:
 File > Swift Packages > Add Package Dependency
-// Add the SDK repository URL
+// Add the SDK repository URL: [https://github.com/advato/referrals-sdk-ios](https://github.com/advato/referrals-sdk-ios)
 ```
 
 ### Initialize the SDK
 
 ```swift
 let entryPoint = AdvatoEntryPoint(
-    accessToken: "your_access_token", // Find this in Dashboard > About App
+    accessToken: "your_access_token", // Find this in Dashboard > Info about App
     userId: "unique_user_id"         // Your app's user identifier
 )
 Advato.shared.start(entryPoint: entryPoint)
