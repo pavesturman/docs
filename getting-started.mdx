@@ -1,0 +1,32 @@
+---
+title: "Getting Started with Advato"
+description: "Detailed guide on setting up."
+---
+
+## Create Your Account
+
+1. Sign up at [app.useadvato.com](https://app.useadvato.com)
+2. Complete the onboarding process
+3. Create your first app to get your SDK token
+
+## Basic Setup
+
+### Install the SDK
+
+Using Swift Package Manager:
+
+```swift
+// In Xcode:
+File > Swift Packages > Add Package Dependency
+// Add the SDK repository URL
+```
+
+### Initialize the SDK
+
+```swift
+let entryPoint = AdvatoEntryPoint(
+    accessToken: "your_access_token", // Find this in Dashboard > About App
+    userId: "unique_user_id"         // Your app's user identifier
+)
+Advato.shared.start(entryPoint: entryPoint)
+```
