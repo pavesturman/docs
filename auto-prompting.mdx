@@ -1,0 +1,23 @@
+---
+title: "Auto Prompting"
+description: "Detailed guide on auto prompting."
+---
+
+# Auto-Prompting
+
+The SDK can automatically prompt users to share their referral link based on specific events:
+
+```swift
+// Send events from your app
+Advato.shared.sendEvent("purchase_completed")
+
+// Reset prompt cooldown if needed
+Advato.shared.resetPromptCooldown()
+```
+
+Configure auto-prompting in the dashboard:
+
+- Enable/disable the feature
+- Set prompt frequency
+- Customize prompt appearance
+- Define trigger events

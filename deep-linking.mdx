@@ -1,0 +1,24 @@
+---
+title: "Deep Linking"
+description: "Detailed guide on deep linking."
+---
+
+# Deep Link Handling
+
+Configure your app to handle referral deep links:
+
+1. Add URL scheme in Xcode
+2. Configure deep link handling:
+
+```swift
+// SwiftUI
+.onOpenURL { url in
+    Advato.shared.handleIncomingLink(url)
+}
+
+// UIKit
+func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+    guard let url = URLContexts.first?.url else { return }
+    Advato.shared.handleIncomingLink(url)
+}
+```
